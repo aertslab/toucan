@@ -155,6 +155,7 @@ public class EnsemblAccess {
         eProps.setProperty("path", GlobalProperties.getEnsemblPath());
         eProps.setProperty("jdbc_driver", GlobalProperties.getJdbcDriver());
         eProps.setProperty("host", GlobalProperties.getEnsemblMysql());
+        eProps.setProperty("port", GlobalProperties.getEnsemblMysqlPort());
         eProps.setProperty("user", GlobalProperties.getEnsemblUser());
         eProps.setProperty("password", GlobalProperties.getEnsemblPass());
         eProps.setProperty("database", GlobalProperties.getSpecies(spec.toLowerCase().replaceAll("_vega","")).core); // here: only human VEGA sequences...

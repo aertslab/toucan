@@ -60,6 +60,7 @@ public class GlobalProperties
   private static String vegaMart;
   private static String ensemblRelease;
   private static String ensemblMysql;
+  private static String ensemblMysqlPort;
   private static String martMysql;
   private static String ensemblUser;
   private static String ensemblPass;
@@ -92,9 +93,9 @@ public class GlobalProperties
          in = cl.getResourceAsStream("properties/basics.properties");
          System.out.println("in="+in);
          if(in==null) in = new FileInputStream("properties/basics.properties");
-         else System.out.println("Taking properties from jar");
+         else System.out.println("Taking properties from jar.");
          basicProps.load(in);
-         if(basicProps.size()>0) System.out.println("Basics.properties file found internally");
+         if(basicProps.size()>0) System.out.println("Basics.properties file found internally.");
          else System.out.println("Problem: no properties found!");
 
 
@@ -146,6 +147,7 @@ public class GlobalProperties
     vegaMart = basicProps.getProperty("vega_mart");
     ensemblRelease = basicProps.getProperty("ensembl_release");
     ensemblMysql = basicProps.getProperty("ensembl_mysql");
+    ensemblMysqlPort = basicProps.getProperty("ensembl_mysql_port");
     martMysql = basicProps.getProperty("mart_mysql");
     ensemblUser = basicProps.getProperty("ensembl_user");
     ensemblPass = basicProps.getProperty("ensembl_passwd");
@@ -286,6 +288,14 @@ public class GlobalProperties
     }
     readProperties();
     return ensemblMysql;
+  }
+
+  public static String getEnsemblMysqlPort() {
+    if (isUpdated) {
+      return ensemblMysqlPort;
+    }
+    readProperties();
+    return ensemblMysqlPort;
   }
 
   public static String getMartMysql() {

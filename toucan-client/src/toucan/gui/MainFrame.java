@@ -48,14 +48,15 @@ import com.Ostermiller.util.Browser;
  * Copyright:    Copyright (c) 2004
  * Company: University of Leuven, Department of Electrical Engineering ESAT-SCD, Belgium
  * @author Stein Aerts <stein.aerts@esat.kuleuven.ac.be>
- * @version 3.0
+ * @version 3.1.1
  */
 
 public class MainFrame
-    extends JFrame
-    implements ActionListener, ClipboardOwner, DropTargetListener {
+  extends JFrame
+  implements ActionListener, ClipboardOwner, DropTargetListener {
 
-  public String version = "3.1.0";
+  private static final long serialVersionUID = 1L;
+  public String version = "3.1.1";
   public String homeDir = "";
   private JMenuBar menu = new JMenuBar();
   private JMenuItem openItem, saveItem, saveItem2,

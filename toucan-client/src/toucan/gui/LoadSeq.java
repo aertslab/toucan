@@ -207,9 +207,11 @@ public class LoadSeq
         dbId = ( (Integer) GlobalProperties.getSpeciesArr()[cmbDbType.
                 getSelectedIndex()].externalIds.get(cmbExternals.
             getSelectedIndex())).intValue();
+
         externalDb = (String) cmbExternals.getSelectedItem();
 
-        dbUrl = "jdbc:mysql://" + GlobalProperties.getEnsemblMysql() + "/" +
+        dbUrl = "jdbc:mysql://" + GlobalProperties.getEnsemblMysql() + ":" +
+            GlobalProperties.getEnsemblMysqlPort() + "/" +
             GlobalProperties.getSpeciesArr()[cmbDbType.getSelectedIndex()].core +
             "?user=" + GlobalProperties.getEnsemblUser() + "&password=" +
             GlobalProperties.getEnsemblPass();
@@ -346,6 +348,7 @@ public class LoadSeq
       eProps.setProperty("path", GlobalProperties.getEnsemblPath());
       eProps.setProperty("jdbc_driver", GlobalProperties.getJdbcDriver());
       eProps.setProperty("host", GlobalProperties.getEnsemblMysql());
+      eProps.setProperty("port", GlobalProperties.getEnsemblMysqlPort());
       eProps.setProperty("user", GlobalProperties.getEnsemblUser());
       eProps.setProperty("password", GlobalProperties.getEnsemblPass());
       eProps.setProperty("database", spec.core);
