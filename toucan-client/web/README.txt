@@ -27,4 +27,4 @@ php scripts:
 
 
 Old Toucan homepage: http://www.esat.kuleuven.ac.be/~saerts/software/toucan.html
-New Toucan homepage: http://med.kuleuven.be/lcb/toucan.php
+New Toucan homepage: https://gbiomed.kuleuven.be/apps/lcb/toucan/index.php
