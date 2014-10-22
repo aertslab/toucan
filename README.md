@@ -4,9 +4,10 @@
 
 [TOUCAN home page](https://gbiomed.kuleuven.be/apps/lcb/toucan/index.php)
 
-## Launch now
+## Download
 
-[Click here](https://gbiomed.kuleuven.be/apps/lcb/toucan/toucan.jnlp) to launch the Java Web Start Application.
+[TOUCAN for Windows](https://gbiomed.kuleuven.be/apps/lcb/toucan/toucan.zip)
+[TOUCAN for Mac OS / Linux / BSD](https://gbiomed.kuleuven.be/apps/lcb/toucan/toucan.tar.gz)
 
 ## Description
 
